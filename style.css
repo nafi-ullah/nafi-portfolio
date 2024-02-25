@@ -349,6 +349,9 @@ section{
 
 /* ==================== About section css code ============================ */
 .about{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -453,7 +456,9 @@ section{
 }
 /*==================== education===================*/
 .education{
-   
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
@@ -518,36 +523,68 @@ section{
 
 .achievement-content{
     margin-top: 30px;
+    margin-right: 20px;
 }
 
 .achievement-content .award-item{
-    width: 35rem;
+    width: 32rem;
     box-shadow: rgba(243, 234, 234, 0.1)0px 1px 3px 0,
                   rgba(0,0,0,0.06)0px 1px 2px 0px;
     padding: 2rem 1rem;
     border-radius: 10px;
     background: var(--bg-color);
-    text-align: center;
+   
     color: #fff;
 }
 .award-img{
-    width: 10rem;
+    max-width: 30rem;
+    max-height: 30rem;
+    border-radius: 10px;
+    
+}
+.all-ach{
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+.award-des{
+    height: 10rem;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 12px;
+}
+
+
+.award-head{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 18px;
 }
 
 .achieve-read{
-    background: var(--gradient-white-bg2);
+    background: var(--gradient-color-bg);
     box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
                   rgba(0,0,0,0.06)0px 1px 2px 0px;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 500;
-    color: #fff;
+    color: #000;
     margin-right: .8rem;
     
     cursor: pointer;              
 }
+
+
 .read-but{
+    width: 100%;
+    text-align: center;
     margin-top: 20px;
 }
 
